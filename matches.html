@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CourtScore | Ndeshjet</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="java/script.js" defer></script>
+</head>
+<body data-page="matches">
+  <div class="layout">
+    <aside class="sidebar">
+      <a class="brand" href="index.html"><span class="brand-icon">C</span><span>Court<span class="accent">Score</span><small>SPORTS IN REAL TIME</small></span></a>
+      <p class="side-label">MENU KRYESORE</p>
+      <nav class="navigation">
+        <a class="nav-item" href="index.html">▦ <span>Ballina</span></a>
+        <a class="nav-item" href="football.html">⚽ <span>Futboll</span></a>
+        <a class="nav-item" href="basketball.html">🏀 <span>Basketboll</span></a>
+        <a class="nav-item active" href="matches.html">◷ <span>Të gjitha ndeshjet</span></a>
+        <a class="nav-item" href="community.html">☷ <span>Komuniteti</span></a>
+      </nav>
+      <div class="sidebar-bottom"><div class="promo"><span>📊</span><h3>Asnjë rezultat pa humbur</h3><p>Kërko ndeshjet dhe filtro sipas sportit.</p></div><small class="copyright">© 2026 COURTSCORE</small></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><a class="mobile-brand" href="index.html"><span class="brand-icon">C</span><b>Court<span class="accent">Score</span></b></a><label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Kërko ekip ose ligë..."></label><button id="refreshButton" class="icon-button">↻</button></header>
+      <section class="page-heading"><div><div class="eyebrow">MATCH CENTER</div><h1>Të gjitha <span class="accent">ndeshjet.</span></h1><p>Një vend për futbollin dhe basketbollin.</p></div><div class="date-pill" id="todayDate">📅 Sot</div></section>
+      <section class="section">
+        <div class="status-filters sport-filter"><button class="filter-btn active" data-sport="all">Të gjitha sportet</button><button class="filter-btn" data-sport="football">⚽ Futboll</button><button class="filter-btn" data-sport="basketball">🏀 Basketboll</button></div>
+        <div class="status-filters"><button class="filter-btn active" data-status="all">Të gjitha</button><button class="filter-btn" data-status="live">🔴 Live</button><button class="filter-btn" data-status="scheduled">Të ardhshme</button><button class="filter-btn" data-status="finished">Të përfunduara</button><button class="filter-btn" data-status="favorites">☆ Favoritet</button></div>
+        <div id="leagueFilters" class="league-filters"></div>
+        <div class="section-heading"><div><span class="eyebrow">MATCH CENTER</span><h2 id="resultsTitle">Orari dhe rezultatet</h2></div><button id="refreshButtonSecondary" class="secondary-btn">↻ Rifresko</button></div>
+        <div id="pageMatches" class="match-list"><div class="loading">Duke ngarkuar ndeshjet...</div></div>
+      </section>
+      <footer class="footer">CourtScore <span>•</span> Të gjitha ndeshjet, një vend.</footer>
+    </main>
+  </div>
+</body>
+</html>
